@@ -62,56 +62,67 @@
     </div>
   </section>
 
-  <section id="research" class="section container">
+    <section id="research" class="section container research-section">
     <p class="section-kicker">Research</p>
 
-    <div class="research-list">
-      <article class="research-project">
-        <div class="research-visual visual-tree" role="img" aria-label="Representative schematic of stand-off radar tree inspection">
-          <span class="visual-label">Stand-off radar · GPR B-scan · MLFF-Net</span>
-          <div class="tree-schematic"><div class="radar"></div><div class="waves">)))</div><div class="trunk"><span></span></div></div>
+    <div class="research-list research-stack-list">
+      <article class="research-project research-project-stacked">
+        <h3 class="project-title"><span>01</span> Rapid and contactless detection of internal tree defects</h3>
+        <div class="research-visual research-image-card">
+          <img src="assets/images/research/project1-tree-defect-detection.png" alt="AI-assisted stand-off radar system for tree defect detection workflow">
         </div>
         <div class="research-copy">
-          <h3 class="project-title"><span>01</span> Rapid and contactless detection of internal tree defects</h3>
           <p>A stand-off radar acquires B-scans along a straight trajectory, while dedicated signal processing suppresses strong bark reflections. A multilevel feature-fusion network then identifies defect signatures for rapid tree-health screening.</p>
-          <div class="paper-meta"><strong>Paper</strong><span>J. Qian, Y. H. Lee, K. Cheng, Q. Dai, M. L. M. Yusof, D. Lee, and A. C. Yucel</span><a href="https://doi.org/10.1109/TGRS.2024.3412286" target="_blank" rel="noopener">A Deep Learning-Augmented Stand-Off Radar Scheme for Rapidly Detecting Tree Defects →</a></div>
+          <div class="paper-meta">
+            <strong>Paper</strong>
+            <p>J. Qian, Y. H. Lee, K. Cheng, Q. Dai, M. L. M. Yusof, D. Lee, and A. C. Yucel, “A deep learning-augmented stand-off radar scheme for rapidly detecting tree defects,” <em>IEEE Transactions on Geoscience and Remote Sensing</em>, vol. 62, pp. 1–15, 2024. <a href="https://doi.org/10.1109/TGRS.2024.3412286" target="_blank" rel="noopener">[link]</a></p>
+          </div>
         </div>
       </article>
 
-      <article class="research-project">
+      <article class="research-project research-project-stacked">
+        <h3 class="project-title"><span>02</span> Shape and permittivity reconstruction inside cylindrical structures</h3>
         <div class="research-visual visual-migration" role="img" aria-label="Representative workflow for migration-assisted tree defect reconstruction">
           <span class="visual-label">Permittivity estimation · Migration · Shape reconstruction</span>
           <div class="workflow"><b>DPE-Net</b><i>→</i><b>Migration</b><i>→</i><b>SR-Net</b></div>
           <div class="scan-grid"><span></span><span></span><span></span></div>
         </div>
         <div class="research-copy">
-          <h3 class="project-title"><span>02</span> Shape and permittivity reconstruction inside cylindrical structures</h3>
           <p>This framework combines data-driven permittivity estimation, physics-based Kirchhoff migration, and learned shape refinement. The staged design retains physical interpretability while improving reconstruction accuracy on laboratory trunks, real samples, and live trees.</p>
-          <div class="paper-meta"><strong>Paper</strong><span>J. Qian, Y. H. Lee, K. Cheng, Q. Dai, M. L. M. Yusof, J. Wang, and A. C. Yucel</span><a href="https://arxiv.org/abs/2602.05308" target="_blank" rel="noopener">A Migration-Assisted Deep Learning Scheme for Shape and Permittivity Reconstruction of the Target Inside the Cylindrical Object—A Case Study for Tree Trunks →</a></div>
+          <div class="paper-meta">
+            <strong>Paper</strong>
+            <p>J. Qian, Y. H. Lee, K. Cheng, Q. Dai, M. L. M. Yusof, J. Wang, and A. C. Yucel, “A migration-assisted deep learning scheme for shape and permittivity reconstruction of the target inside the cylindrical object—A case study for tree trunks,” <em>IEEE Transactions on Geoscience and Remote Sensing</em>, vol. 64, pp. 1–18, 2026. <a href="https://arxiv.org/abs/2602.05308" target="_blank" rel="noopener">[link]</a></p>
+          </div>
         </div>
       </article>
 
-      <article class="research-project">
+      <article class="research-project research-project-stacked">
+        <h3 class="project-title"><span>03</span> Self-supervised reconstruction of heavily corrupted GPR B-scans</h3>
         <div class="research-visual visual-msformer" role="img" aria-label="Representative transformer reconstruction diagram">
           <span class="visual-label">Self-supervised learning · Multi-sparsity attention</span>
           <div class="bscan before"></div><div class="arrow">→</div><div class="network">MS<br>Former</div><div class="arrow">→</div><div class="bscan after"></div>
         </div>
         <div class="research-copy">
-          <h3 class="project-title"><span>03</span> Self-supervised reconstruction of heavily corrupted GPR B-scans</h3>
           <p>MSFormer uses a hierarchical U-shaped transformer and multi-sparsity attention to recover missing traces over large corrupted regions. A self-supervised masking strategy enables training without requiring fully observed measurement targets.</p>
-          <div class="paper-meta"><strong>Paper</strong><span>J. Qian, Y. H. Lee, K. Cheng, M. L. M. Yusof, J. Wang, and A. C. Yucel</span><a href="https://scholar.google.com/citations?user=idHLAGEAAAAJ&hl=zh-CN" target="_blank" rel="noopener">MSFormer: A Multi-Sparsity Transformer for Reconstructing Corrupted GPR B-Scans via Self-Supervised Learning →</a></div>
+          <div class="paper-meta">
+            <strong>Paper</strong>
+            <p>J. Qian, Y. H. Lee, K. Cheng, M. L. M. Yusof, J. Wang, and A. C. Yucel, “MSFormer: A multi-sparsity transformer for reconstructing corrupted GPR B-scans via self-supervised learning,” <em>IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing</em>, pp. 17344–17362, 2026. <a href="https://scholar.google.com/citations?user=idHLAGEAAAAJ&hl=zh-CN" target="_blank" rel="noopener">[link]</a></p>
+          </div>
         </div>
       </article>
 
-      <article class="research-project">
+      <article class="research-project research-project-stacked">
+        <h3 class="project-title"><span>04</span> Adaptive simulation of electromagnetic and multiphysics phenomena</h3>
         <div class="research-visual visual-em" role="img" aria-label="Representative computational electromagnetics and plasma simulation">
           <span class="visual-label">DGTD · Adaptive meshes · EM–plasma coupling</span>
           <div class="mesh"></div><div class="field-ring r1"></div><div class="field-ring r2"></div><div class="field-ring r3"></div>
         </div>
         <div class="research-copy">
-          <h3 class="project-title"><span>04</span> Adaptive simulation of electromagnetic and multiphysics phenomena</h3>
           <p>My earlier work developed high-order time-domain solvers with dynamic mesh adaptation and multirate integration for coupled electromagnetic–plasma problems, enabling efficient resolution of multiscale and strongly varying physical fields.</p>
-          <div class="paper-meta"><strong>Paper</strong><span>S. Yan, J. Qian, and J. Jin</span><a href="https://doi.org/10.1109/JMMCT.2019.2901533" target="_blank" rel="noopener">An Advanced EM-Plasma Simulator Based on the DGTD Algorithm With Dynamic Adaptation and Multirate Time Integration Techniques →</a></div>
+          <div class="paper-meta">
+            <strong>Paper</strong>
+            <p>S. Yan, J. Qian, and J. Jin, “An advanced EM-plasma simulator based on the DGTD algorithm with dynamic adaptation and multirate time integration techniques,” <em>IEEE Journal on Multiscale and Multiphysics Computational Techniques</em>, vol. 4, pp. 76–87, 2019. <a href="https://doi.org/10.1109/JMMCT.2019.2901533" target="_blank" rel="noopener">[link]</a></p>
+          </div>
         </div>
       </article>
     </div>

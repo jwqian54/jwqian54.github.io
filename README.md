@@ -13,3 +13,16 @@ Open `index.html` in a browser.
 
 ## Editing research visuals
 The four research panels are built with HTML/CSS so the site works without external image dependencies. They can later be replaced by screenshots from the corresponding papers by replacing the content of each `.research-visual` block with an `<img>` element.
+
+
+## Updating project images
+
+Project figures are stored in `assets/images/research/`. To replace a project image, copy your new PNG/JPG into that folder and update the corresponding `<img src="...">` path in `index.html`.
+
+For example, Project 1 currently uses:
+
+```html
+<img src="assets/images/research/project1-tree-defect-detection.png" alt="AI-assisted stand-off radar system for tree defect detection workflow">
+```
+
+Recommended aspect ratio: 16:9 or close to 16:9. Recommended width: 1400–1800 px for clear display without making the website too heavy.
