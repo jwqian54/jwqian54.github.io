@@ -56,3 +56,19 @@
 .research-project-stacked .paper-meta p a:hover {
   text-decoration: underline;
 }
+
+
+/* Ensure all research project titles are left-aligned */
+.research-project-stacked .project-title,
+.research-project-stacked .project-title span {
+  text-align: left;
+}
+
+.research-project-stacked {
+  align-items: stretch;
+}
+
+.research-project-stacked .project-title {
+  width: 100%;
+  align-self: stretch;
+}
