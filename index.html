@@ -112,9 +112,54 @@
 
       <article class="research-project research-project-stacked">
         <h3 class="project-title"><span>04</span> Adaptive simulation of electromagnetic and multiphysics phenomena</h3>
-        <div class="research-visual visual-em" role="img" aria-label="Representative computational electromagnetics and plasma simulation">
-          <span class="visual-label">DGTD · Adaptive meshes · EM–plasma coupling</span>
-          <div class="mesh"></div><div class="field-ring r1"></div><div class="field-ring r2"></div><div class="field-ring r3"></div>
+        <div class="research-visual project4-dynamic-panel" aria-label="Project 4 visual panel for electromagnetic-plasma interaction and adaptive simulation">
+          <div class="p4-panel-cell p4-background">
+            <div class="p4-cell-title">Physical background</div>
+            <div class="p4-placeholder">
+              <strong>Electromagnetic–plasma interaction in HPMD</strong>
+              <span>Future static schematic:<br>ionization → electron motion → secondary EM field → air breakdown</span>
+            </div>
+          </div>
+
+          <div class="p4-panel-cell p4-method">
+            <div class="p4-cell-title">Numerical method</div>
+            <div class="p4-placeholder">
+              <strong>Dynamic mesh refinement</strong>
+              <span>Future method schematic:<br>adaptive mesh density + local time stepping</span>
+            </div>
+          </div>
+
+          <div class="p4-panel-cell p4-animation-group">
+            <div class="p4-group-title">Plasma formation and EM shielding process with adaptive mesh refinement</div>
+            <div class="p4-gif-grid">
+              <div class="p4-gif-card">
+                <div class="p4-mini-title">Effective electric field</div>
+                <img class="p4-gif-media" src="assets/images/research/project4-effective-electric-field.png" alt="Effective electric-field distribution in the adaptive mesh simulation">
+              </div>
+              <div class="p4-gif-card">
+                <div class="p4-mini-title">Electron density</div>
+                <img class="p4-gif-media" src="assets/images/research/project4-electron-density.gif" alt="Electron-density evolution in the adaptive mesh simulation">
+              </div>
+            </div>
+          </div>
+
+          <div class="p4-panel-cell p4-results">
+            <div class="p4-cell-title">Accuracy and efficiency evaluation</div>
+            <div class="p4-result-grid">
+              <div class="p4-result-card">
+                <img src="assets/images/research/project4-efield-accuracy.png" alt="Accuracy comparison of effective electric field">
+                <span>Electric-field accuracy</span>
+              </div>
+              <div class="p4-result-card">
+                <img src="assets/images/research/project4-electron-accuracy.png" alt="Accuracy comparison of electron density">
+                <span>Electron-density accuracy</span>
+              </div>
+              <div class="p4-result-card">
+                <img src="assets/images/research/project4-cpu-time.png" alt="CPU time comparison">
+                <span>CPU time</span>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="research-copy">
           <p>My earlier work developed high-order time-domain solvers with dynamic mesh adaptation and multirate integration for coupled electromagnetic–plasma problems, enabling efficient resolution of multiscale and strongly varying physical fields.</p>
