@@ -340,3 +340,243 @@
   display: block;
   background: #fff;
 }
+
+
+/* Project 4 composite results panel */
+.p4-results {
+  display: flex;
+  flex-direction: column;
+  padding: 42px 10px 10px;
+}
+
+.p4-result-composite {
+  height: 100%;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.p4-result-figure-wrap {
+  flex: 1 1 auto;
+  min-height: 0;
+  border: 1px solid rgba(47,94,168,.18);
+  border-radius: 12px;
+  background: linear-gradient(180deg, #ffffff, #f8fbff);
+  padding: 8px;
+  overflow: hidden;
+}
+
+.p4-result-figure {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.p4-result-note {
+  flex: 0 0 auto;
+  font-size: .72rem;
+  line-height: 1.25;
+  color: var(--accent);
+  font-weight: 800;
+  letter-spacing: .02em;
+  text-align: center;
+  padding: 0 6px 2px;
+}
+
+/* Disable legacy three-card result layout if still present elsewhere */
+.p4-result-grid { display: none; }
+
+@media(max-width: 850px) {
+  .p4-results {
+    min-height: 230px;
+  }
+  .p4-result-note {
+    font-size: .78rem;
+  }
+}
+
+
+/* Project 4 result takeaway highlight */
+.p4-result-note {
+  flex: 0 0 auto;
+  font-size: .76rem;
+  line-height: 1.2;
+  color: var(--accent);
+  font-weight: 800;
+  letter-spacing: .01em;
+  text-align: center;
+  padding: 4px 8px 6px;
+}
+
+.p4-result-note .p4-highlight {
+  color: #d94f2a;
+  font-weight: 900;
+}
+
+
+/* Ensure Project 4 result takeaway matches the panel-title typography */
+.p4-result-note {
+  font-size: .72rem;
+  line-height: 1.25;
+  color: var(--accent);
+  font-weight: 800;
+  letter-spacing: .02em;
+  text-align: center;
+  padding: 6px 10px;
+}
+
+.p4-result-note .p4-highlight {
+  color: #d94f2a;
+  font-weight: 900;
+}
+
+
+/* Project 2 corrected figure-based layout */
+.project2-figure-panel {
+  padding: 18px;
+  background: linear-gradient(135deg, #f8fbff 0%, #eef4fb 100%);
+  border: 1px solid #d7e0ed;
+  border-radius: 22px;
+  display: grid;
+  grid-template-rows: 1fr 0.92fr;
+  gap: 16px;
+  aspect-ratio: 16 / 10.2;
+  overflow: hidden;
+}
+
+.p2-method-block,
+.p2-result-block {
+  min-width: 0;
+  min-height: 0;
+  background: rgba(255,255,255,.86);
+  border: 1px solid #dce5f2;
+  border-radius: 16px;
+  box-shadow: 0 10px 26px rgba(26,43,74,.06);
+  overflow: hidden;
+}
+
+.p2-method-block {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 12px;
+}
+
+.p2-panel-title {
+  align-self: center;
+  padding: 6px 16px;
+  border-radius: 999px;
+  background: rgba(255,255,255,.94);
+  color: var(--accent);
+  font-size: .76rem;
+  line-height: 1.25;
+  font-weight: 800;
+  letter-spacing: .02em;
+  text-align: center;
+  border: 1px solid rgba(47,94,168,.12);
+}
+
+.p2-method-image-slot {
+  flex: 1 1 auto;
+  min-height: 0;
+  border: 1px dashed rgba(47,94,168,.32);
+  border-radius: 14px;
+  background:
+    linear-gradient(180deg, #ffffff, #f7faff),
+    repeating-linear-gradient(90deg, rgba(47,94,168,.05) 0 1px, transparent 1px 34px);
+  display: grid;
+  place-items: center;
+  text-align: center;
+  color: var(--muted);
+  font-size: .82rem;
+  line-height: 1.45;
+  font-weight: 700;
+  padding: 14px;
+}
+
+.p2-result-block {
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr);
+  gap: 10px;
+  padding: 12px;
+}
+
+.p2-result-title-row {
+  display: grid;
+  grid-template-columns: 5.08fr 5.8fr;
+  gap: 12px;
+  align-items: stretch;
+}
+
+.p2-result-title {
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(255,255,255,.94);
+  color: var(--accent);
+  font-size: .72rem;
+  line-height: 1.22;
+  font-weight: 800;
+  letter-spacing: .02em;
+  text-align: center;
+  border: 1px solid rgba(47,94,168,.12);
+}
+
+.p2-result-title span {
+  color: var(--muted);
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.p2-result-image-slot {
+  min-height: 0;
+  border: 1px dashed rgba(47,94,168,.32);
+  border-radius: 14px;
+  background: linear-gradient(180deg, #ffffff, #f7faff);
+  display: grid;
+  place-items: center;
+  text-align: center;
+  color: var(--muted);
+  font-size: .82rem;
+  line-height: 1.35;
+  font-weight: 700;
+  padding: 14px;
+}
+
+.project2-figure-panel img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+/* Replacement hooks:
+   1) Replace .p2-method-image-slot content with:
+      <img src="assets/images/research/project2-methodology.png" alt="...">
+   2) Replace .p2-result-image-slot content with:
+      <img src="assets/images/research/project2-results-comparison.png" alt="...">
+   3) Result title columns follow the provided physical widths:
+      left 5.08 in, right 5.80 in.
+*/
+
+@media(max-width: 850px) {
+  .project2-figure-panel {
+    aspect-ratio: auto;
+    grid-template-rows: auto auto;
+  }
+
+  .p2-method-block {
+    min-height: 300px;
+  }
+
+  .p2-result-block {
+    min-height: 260px;
+  }
+}
+
+@media(max-width: 560px) {
+  .p2-result-title-row {
+    grid-template-columns: 1fr;
+  }
+}
