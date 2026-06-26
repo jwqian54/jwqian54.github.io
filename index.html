@@ -144,48 +144,6 @@
 }
 
 </style>
-
-<!-- Project 2 final spacing adjustment inline override -->
-<style>
-.project2-split-panel-v2 {
-  aspect-ratio: 16 / 12.3;
-  grid-template-rows: minmax(0, 1.45fr) minmax(0, 1fr);
-  gap: 14px;
-  padding: 16px;
-}
-.p2v2-method-section {
-  display: grid;
-  grid-template-rows: minmax(0, 1fr);
-  padding: 10px;
-}
-.p2v2-method-slot,
-.p2v2-method-image-wrap,
-.p2v2-result-image-wrap {
-  min-height: 0;
-  height: 100%;
-  padding: 0;
-  border: none;
-  background: #ffffff;
-  overflow: hidden;
-}
-.p2v2-results-section,
-.p2v2-results-no-title {
-  display: grid;
-  grid-template-rows: minmax(0, 1fr);
-  padding: 10px;
-}
-.p2v2-method-image-wrap img,
-.p2v2-result-image-wrap img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  display: block;
-}
-.project2-split-panel-v2 .p2v2-title-pill {
-  display: none;
-}
-</style>
-
 </head>
 <body>
 <header class="site-header">
@@ -259,18 +217,8 @@
 
       <article class="research-project research-project-stacked">
         <h3 class="project-title"><span>02</span> Shape and permittivity reconstruction inside cylindrical structures</h3>
-        <div class="research-visual project2-split-panel-v2" aria-label="Project 2 methodology and result comparison layout">
-          <section class="p2v2-method-section">
-            <div class="p2v2-method-slot p2v2-method-image-wrap">
-              <img src="assets/images/research/project2-methodology.png" alt="Methodology workflow: DPE-Net permittivity estimation, modified Kirchhoff migration, and SR-Net shape reconstruction">
-            </div>
-          </section>
-
-          <section class="p2v2-results-section p2v2-results-no-title">
-            <div class="p2v2-result-image-wrap">
-              <img src="assets/images/research/project2-results-comparison.png?v=3" alt="Comparison with AI benchmarks on real tree trunk samples and other NDTs on live trees">
-            </div>
-          </section>
+        <div class="research-visual research-image-card">
+          <img src="assets/images/research/project2-composite-16x9.png?v=1" alt="Methodology and comparison results for shape and permittivity reconstruction inside cylindrical structures">
         </div>
         <div class="research-copy">
           <p>This framework combines data-driven permittivity estimation, physics-based Kirchhoff migration, and learned shape refinement. The staged design retains physical interpretability while improving reconstruction accuracy on laboratory trunks, real samples, and live trees.</p>
