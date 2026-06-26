@@ -82,10 +82,58 @@
 
       <article class="research-project research-project-stacked">
         <h3 class="project-title"><span>02</span> Shape and permittivity reconstruction inside cylindrical structures</h3>
-        <div class="research-visual visual-migration" role="img" aria-label="Representative workflow for migration-assisted tree defect reconstruction">
-          <span class="visual-label">Permittivity estimation · Migration · Shape reconstruction</span>
-          <div class="workflow"><b>DPE-Net</b><i>→</i><b>Migration</b><i>→</i><b>SR-Net</b></div>
-          <div class="scan-grid"><span></span><span></span><span></span></div>
+        <div class="research-visual project2-structured-panel" aria-label="Structured layout for migration-assisted tree defect reconstruction workflow and comparative results">
+          <div class="p2-section p2-methodology">
+            <div class="p2-section-title">Methodology</div>
+            <div class="p2-method-flow">
+              <div class="p2-method-card p2-card-dpe">
+                <div class="p2-card-title">Dual-permittivity estimation <span>(AI)</span></div>
+                <div class="p2-pipeline-row">
+                  <div class="p2-media-slot p2-bscan-slot">B-scan</div>
+                  <div class="p2-model-pill">DPE-Net</div>
+                  <div class="p2-output-box">
+                    <span>ε<sub>r</sub>, medium</span>
+                    <span>ε<sub>r</sub>, defect</span>
+                  </div>
+                </div>
+                <div class="p2-attention-grid">
+                  <div class="p2-small-slot">Attention map<br><b>ε<sub>r</sub>, medium</b></div>
+                  <div class="p2-small-slot">Attention map<br><b>ε<sub>r</sub>, defect</b></div>
+                </div>
+              </div>
+              <div class="p2-flow-arrow">→</div>
+              <div class="p2-method-card p2-card-migration">
+                <div class="p2-card-title">Modified Kirchhoff migration <span>(Physics)</span></div>
+                <div class="p2-pipeline-row p2-pipeline-two">
+                  <div class="p2-media-slot p2-bscan-slot">Same B-scan</div>
+                  <div class="p2-model-pill p2-model-pill-physics">Migration</div>
+                  <div class="p2-media-slot">Migrated image</div>
+                </div>
+                <div class="p2-compact-note">SSIM-based AFT selects the imaging result with the strongest shape information.</div>
+              </div>
+              <div class="p2-flow-arrow">→</div>
+              <div class="p2-method-card p2-card-sr">
+                <div class="p2-card-title">Shape reconstruction <span>(AI)</span></div>
+                <div class="p2-pipeline-row p2-pipeline-two">
+                  <div class="p2-media-slot">Same migrated image</div>
+                  <div class="p2-model-pill">SR-Net</div>
+                  <div class="p2-media-slot">Geometry map</div>
+                </div>
+                <div class="p2-compact-note">Produces a high-quality defect geometry map.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="p2-section p2-results-section">
+            <div class="p2-results-headings">
+              <div class="p2-results-heading">Comparison with DL-based benchmarks (real tree trunk samples)</div>
+              <div class="p2-results-heading">Comparison with other NDTs (live trees)</div>
+            </div>
+            <div class="p2-results-grid">
+              <div class="p2-result-slot">Composite result figure placeholder</div>
+              <div class="p2-result-slot">Composite result figure placeholder</div>
+            </div>
+          </div>
         </div>
         <div class="research-copy">
           <p>This framework combines data-driven permittivity estimation, physics-based Kirchhoff migration, and learned shape refinement. The staged design retains physical interpretability while improving reconstruction accuracy on laboratory trunks, real samples, and live trees.</p>
