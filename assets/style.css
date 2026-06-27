@@ -927,3 +927,21 @@
     margin-right: 0;
   }
 }
+
+
+.paper-info {
+  margin-top: 14px;
+  color: var(--muted);
+  font-size: .95rem;
+  line-height: 1.55;
+}
+
+.paper-info a {
+  color: var(--accent);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.paper-info a:hover {
+  color: var(--accent-dark);
+}
