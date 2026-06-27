@@ -1163,3 +1163,49 @@
     width: min(72vw, 300px);
   }
 }
+
+
+/* Final About portrait balance: smaller and more centered between left links and text */
+.about-grid-new {
+  grid-template-columns: 0.86fr 0.68fr 1.66fr;
+  column-gap: clamp(30px, 2.6vw, 46px);
+}
+
+.about-photo-panel {
+  justify-content: center;
+  transform: translateX(-42px);
+}
+
+.about-photo-panel img {
+  width: clamp(210px, 16.5vw, 275px);
+  height: auto;
+  aspect-ratio: 1462 / 2048;
+  object-fit: cover;
+  object-position: center top;
+}
+
+@media(max-width: 1100px) {
+  .about-grid-new {
+    grid-template-columns: 0.82fr 0.68fr 1.58fr;
+    column-gap: 28px;
+  }
+
+  .about-photo-panel {
+    transform: translateX(-24px);
+  }
+
+  .about-photo-panel img {
+    width: clamp(200px, 17vw, 245px);
+  }
+}
+
+@media(max-width: 850px) {
+  .about-photo-panel {
+    transform: none;
+    justify-content: flex-start;
+  }
+
+  .about-photo-panel img {
+    width: min(68vw, 280px);
+  }
+}
